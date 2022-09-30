@@ -14,7 +14,7 @@ function positionElements() {
 }
 
 function onPlayClick() {
-    window.location.href = window.location.href+"playpage.html";
+    window.location.href = window.location.href + "playpage.html";
 }
 
 function openHelpModal() {
@@ -38,4 +38,11 @@ window.onclick = function (event) {
     } else if (event.target == document.getElementById("infoModal")) {
         document.getElementById("infoModal").style.display = "none";
     }
+
+
+}
+
+//reloads page on orientation change
+window.onorientationchange = function () {
+    window.location.reload();
 }

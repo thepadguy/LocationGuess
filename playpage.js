@@ -175,4 +175,11 @@ window.onclick = function (event) {
     } else if (event.target == document.getElementById("validGuessModal")) {
         document.getElementById("validGuessModal").style.display = "none";
     }
+
+
+}
+
+//reload page on orientation change
+window.onorientationchange = function () {
+    window.location.reload();
 }

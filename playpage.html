@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>LocationGuess</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <link rel="stylesheet" href="playpage.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+        integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
+</head>
+
+<body onload="positionElements()">
+    <div class="header_div" id="header_div">
+        <center>
+            <p class="title" onclick="onLogoClick()">
+                <--LocationGuess-->
+            </p>
+        </center>
+    </div>
+    <div class="background_div" id="background_div">
+    </div>
+    <div class="foreground_div" id="foreground_div">
+        <div class="find_text_div">
+            <center>
+                <p class="find_text" id="find_text">Find:<br>Latitude: -64.534<br>Longitude: -45.352</p>
+            </center>
+        </div>
+        <div class="static_map_div">
+            <iframe scrolling="no" class="static" id="static_map"></iframe>
+        </div>
+        <div class="guess_div">
+            <button class="guess_button" id="guess_button" onclick="guess()">GUESS</button>
+        </div>
+        <div class="nav_map_div" id="nav_map_div">
+        </div>
+        <div class="next_div">
+            <button class="next_button" id="next_button" onclick="nextLevel()">NEXT LOCATION</button>
+        </div>
+    </div>
+    <div id="invalidGuessModal" class="modal">
+        <div class="modalContent">
+            <div class="modalHeader">
+                <span class="close" onclick="closeInvalidModal()">&times;</span>
+                <h2>Invalid Guess</h2>
+            </div>
+            <div class="modalBody">
+                <p class="modalText">Please place a marker on the map first!</p>
+            </div>
+        </div>
+    </div>
+    <div id="validGuessModal" class="modal">
+        <div class="modalContent">
+            <div class="modalHeader">
+                <span class="close" onclick="closeValidModal()">&times;</span>
+                <h2>You guessed:</h2>
+            </div>
+            <div class="modalBody">
+                <p class="modalText" id="validGuessText"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="playpage.js"></script>
+
+</html>

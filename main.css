@@ -1,0 +1,202 @@
+@font-face {
+    font-family: mainFont;
+    src: url(party-confetti-font/PartyConfettiRegular-eZOn3.ttf);
+}
+
+body {
+    background: radial-gradient(circle, rgba(146, 211, 245, 1) 35%, rgba(17, 110, 130, 1) 100%);
+    margin: 0px;
+}
+
+div.header_div {
+    background-color: #08313b;
+    width: 100%;
+    height: fit-content;
+}
+
+div.background_div {
+    width: 100%;
+    height: 85%;
+    position: absolute;
+}
+
+div.foreground_div {
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+div.play_button_div {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: center;
+}
+
+div.help_button_div {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: center;
+}
+
+div.info_button_div {
+    display: flex;
+    grid-column: 3;
+    grid-row: 2;
+    justify-content: center;
+}
+
+p.title {
+    color: #7af27a;
+    font-size: 12vmin;
+    font-family: mainFont;
+    margin: 0px;
+}
+
+img.globe_background {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: -1;
+}
+
+button.play_button {
+    background-color: #08313b;
+    border: none;
+    color: #7af27a;
+    text-align: center;
+    font-family: mainFont;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    font-size: 7.2vmin;
+    padding: 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    justify-content: center;
+    align-self: center;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+button.play_button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.play_button:focus {
+    background-color: #7af27a;
+    color: #08313b;
+}
+
+button.help_button {
+    background-color: #08313b;
+    border: none;
+    color: #7af27a;
+    text-align: center;
+    font-family: mainFont;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    font-size: 7.2vmin;
+    padding: 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    justify-content: center;
+    align-self: center;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+button.help_button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.help_button:focus {
+    background-color: #7af27a;
+    color: #08313b;
+}
+
+button.info_button {
+    background-color: #08313b;
+    border: none;
+    color: #7af27a;
+    text-align: center;
+    font-family: mainFont;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    font-size: 7.2vmin;
+    padding: 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    justify-content: center;
+    align-self: center;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+button.info_button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.info_button:focus {
+    background-color: #7af27a;
+    color: #08313b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+    background-color: #08313b;
+    margin: 15% auto;
+    padding: 20px;
+    border: 0;
+    width: 80%;
+}
+
+.close {
+    color: #7af27a;
+    float: right;
+    font-size: 7.5vmin;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalHeader {
+    padding: 2px 16px;
+    background-color: transparent;
+    color: #7af27a;
+    font-family: mainFont;
+    font-size: 5vmin;
+}
+
+.modalBody {
+    padding: 2px 16px;
+    font-family: mainFont;
+    color: #7af27a;
+    font-size: 5vmin;
+}

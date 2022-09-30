@@ -14,7 +14,7 @@ function positionElements() {
 }
 
 function onPlayClick() {
-    window.location.href = window.location.href.replace("main", "playpage");
+    window.location.href = window.location.href.replace("index", "playpage");
 }
 
 function openHelpModal() {

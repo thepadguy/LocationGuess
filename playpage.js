@@ -151,7 +151,7 @@ function guess() {
 }
 
 function onLogoClick() {
-    window.location.href = window.location.href.replace("playpage", "main");
+    window.location.href = window.location.href.replace("playpage", "index");
 }
 
 function openInvalidModal() {
